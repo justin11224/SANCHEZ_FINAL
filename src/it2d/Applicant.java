@@ -79,13 +79,13 @@ public class Applicant {
         System.out.print("|-------------------|Applicant Full Name : ");
         String fname = sc.next();
         System.out.print("|-------------------| Applicant Email: ");
-        String email = sc.next();
+String email = sc.next();
 
-        // Validate the email format
-        while (!email.endsWith("@gmail.com")) {
-            System.out.print("|-------------------| Invalid Gmail! Please enter a valid Gmail address (e.g., example@gmail.com): ");
-            email = sc.next();
-        }
+while (!email.contains("@")) {
+    System.out.print("|-------------------| Invalid Email! Please enter a valid email address (e.g., example@example.com): ");
+    email = sc.next();
+}
+
         System.out.print("|-------------------| Applicant Phone Number: ");
         String pn = sc.next();
 
